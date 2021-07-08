@@ -26,4 +26,5 @@ console.log(lengthOfLongestSubstring('pwwkew'));
 console.log(lengthOfLongestSubstring(''));
 */
 
-const lengthOfLongestSubstring = function (s) {};
+const lengthOfLongestSubstring = function (s) {
+};
