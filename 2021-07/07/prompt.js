@@ -20,4 +20,4 @@ converting the integer to a string?
 
 */
 
-
+const isPalindrome
