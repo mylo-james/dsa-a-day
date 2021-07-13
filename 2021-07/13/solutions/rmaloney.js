@@ -9,16 +9,16 @@ const isValid = function (s) {
   };
 
   while (idx < s.length) {
-    let last = stack[stack.length - 1];
     let current = s[idx];
-    if (match[last] !== current) {
+    if (match[current]) {
       stack.push(current);
-    } else {
-      stack.pop();
+    } else if (current !== match[stack.pop()]) {
+      return false;
     }
+
     idx += 1;
   }
   return stack.length === 0;
 };
 
-console.log(isValid("(]"));
+console.log(isValid("()"));
