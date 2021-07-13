@@ -9,7 +9,6 @@ const lengthOfLongestSubstring = function (s) {
 
   for (let i = 0; i < s.length; i++) {
     let char = s[i];
-    debugger;
     if (seen[char] !== undefined && seen[char] >= leftIdx) {
       leftIdx = seen[char] + 1;
       seen[char] = i;
